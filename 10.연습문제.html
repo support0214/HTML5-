@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+</head>
+<body>
+    <form action="page.jsp" method="post">
+        <fieldset>
+            <legend>회원가입 필수 사항</legend>
+            아이디 : <input type="text" name="userID" required placeholder="영문+숫자 입력"> <br>
+            비밀번호 : <input type="password" name="userPW" required placeholder="영문+숫자+특수문자 입력"> <br>
+            이름 : <input type="text" name="userNAME" required placeholder="성+이름 입력"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>회원가입 선택 사항</legend>
+            주소 : <input type="text" name="userADRESS" placeholder="ex)서울시 영등포구 당산동"> <br>
+            전화번호 : <input type="phone" name="userPHONE" placeholder=" - (입력 제외)"> <br>
+            이메일 : <input type="email" name="userEMAIL" placeholder="exam@naver.com"> <br>
+        </fieldset>
+        <input type="submit" value="회원가입">
+    </form>
+</body>
+</html>
