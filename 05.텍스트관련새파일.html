@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/05.style.css">
+    <title>텍스트 관련스타일</title>
+</head>
+<body>
+    <h1>텍스트 관련스타일(text~)</h1>
+    
+    <h3>color : 텍스트 색상 지정</h3>
+    <pre id="c">
+        선택자 {
+            color: 색상명|16진수|rgb(x,x,x)|rgba(x,x,x,x)|hsl(x,x,x)|hsla(x,x,x,x)
+        }
+    </pre>
+
+    <hr>
+
+    <h3>text-decoration : 텍스트에 줄을 긋거나 줄을 없앨 때 사용</h3>
+    <pre>
+        선택자 {
+            text-decoration: none|underline|overline|line-through;
+        }
+    </pre>
+
+    <ul>
+        <li id="td3">텍스트 영역 위에 줄 긋기</li>
+        <li id="td1">텍스트 영역 아래 줄 긋기</li>
+        <li id="td2">텍스트 영역 중간에 줄 긋기</li>
+    </ul>
+
+    <a href="https://naver.com" target="_blank" id="td4">네이버로 이동</a>
+
+    <hr>
+
+    <h3>text-transform : 영문자의 대소문자 변환시 사용</h3>
+    <pre>
+        선택자 {
+            text-transform : uppercase|lowercase|capitalize;
+        }
+    </pre>
+
+    <ol>
+        <li id="tt1">uppercase : 모든 영문자를 대문자로</li>
+        <li id="tt2">lowerCASE : 모든 영문자를 소문자로</li>
+        <li id="tt3">capitalize : 영문자의 first text만 대문자로</li>
+    </ol>
+
+    <h3>text-shadow : 텍스트에 그림자 효과를 줄 때 사용</h3>
+    <pre>
+        선택자 {
+            text-shadow : 가로거리(x), 세로거리(y), [번짐정도 색상];
+        }
+    </pre>
+
+    <div>
+        <span class="shadow" id="ts1">HTML</span> <br><br>
+        <span class="shadow" id="ts2">HTML</span> <br><br>
+        <span class="shadow" id="ts3">HTML</span>
+    </div>
+    
+    <hr>
+
+    <h3>text-align : 텍스트 정렬할 때 사용</h3>
+    <pre>
+        선택자 {
+            text-align : left(기본값)|right|justify|center;
+        }
+    </pre>
+
+    <h4>왼쪽정렬(기본값)</h4>
+    <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, cum consequuntur dolorem numquam deleniti minima accusamus necessitatibus aspernatur repellendus deserunt alias, in et exercitationem, fugit culpa. Perspiciatis soluta eius itaque.</><>Facere excepturi minima maxime doloribus reiciendis? Laudantium corporis neque sint saepe assumenda ut, culpa id perspiciatis eius fugiat ratione illo? Voluptatem nobis quaerat officia corrupti labore dolorum ullam possimus assumenda.</p>
+
+    <h4>오른쪽 정렬</h4>
+    <p id="ra">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem libero quisquam numquam ad sed aspernatur, laboriosam explicabo et modi odit, quos ipsum officiis illum! Quibusdam nulla accusamus eveniet numquam vel.</span><span>Tenetur, provident accusantium voluptates, numquam totam fuga modi doloribus aut cupiditate consequatur nulla recusandae, officia aliquam dolorem error minima. Quo quos eius, reprehenderit iure excepturi ad tempora omnis? Nemo, repudiandae.</p>
+
+    <h4>가운데 정렬</h4>
+    <p id="ca">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam iste repudiandae voluptatibus recusandae perferendis aut delectus molestiae optio, explicabo veniam doloribus error voluptatem, minus dolor velit cumque? A, aperiam?</span><span>Quidem facilis corrupti perspiciatis obcaecati ea quibusdam, dolorem, aspernatur atque quaerat esse tenetur itaque! Unde inventore placeat sit? Culpa mollitia alias dicta vitae asperiores voluptate? Culpa maxime omnis error suscipit.</p>
+
+    <h4>양쪽 정렬</h4>
+    <p id="ja">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi repellat sit suscipit nobis adipisci consectetur a libero veniam cum in aut impedit voluptatibus, praesentium quasi magnam repellendus architecto quisquam rem.</span><>Voluptas ipsa distinctio unde. Rem minima consequatur, vel temporibus nostrum ut pariatur amet, quod odio neque quia consequuntur tempore. Tempore accusamus voluptas distinctio aut possimus ipsam temporibus nostrum amet. Expedita?</p>
+
+    <hr>
+    
+    <h3>line-height : 줄간격 조절할 때 사용</h3>
+    <pre>
+        선택자 {
+            line-height : normal|px|em|%;
+        }
+    </pre>
+
+    <h4>px : 고정 단위 간격</h4>
+    <p id="lh1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut accusamus eum corporis doloribus dolores temporibus consectetur repellat ea, nemo saepe consequatur dicta minima molestias blanditiis animi. Praesentium quia eum molestias.</p>
+
+    <h4>em : 가변 단위 간격</h4>
+    <p id="lh2">Asperiores voluptate architecto expedita illo ipsum blanditiis explicabo amet eius. Commodi dolores dignissimos, illum rem beatae, sunt officiis odio magnam earum sed a? Explicabo natus cumque officia possimus, magni amet.</p>
+
+    <h4>% 배율 단위 간격</h4>
+    <p id="lh3">Voluptates quia, laboriosam assumenda repellendus eveniet cumque! Optio modi quos, quia odio a libero sapiente dicta harum illum dolorem quis ullam earum soluta, repellat reprehenderit, aspernatur aliquam obcaecati rem saepe?</p>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

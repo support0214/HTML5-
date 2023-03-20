@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 관련 스타일</title>
+    <style>
+        body {
+            background-color: aqua;
+            background-color: rgba(181, 178, 255, 0.2);
+        }
+        #div-bg {
+            background-color: white;
+            padding: 20px;
+            border: 30px solid blue;
+            width: 50%; /* 내용만 50% */
+            box-sizing: border-box; /* content-box : 기본값 */
+        }
+        .div-test {
+            margin: 30px;
+            background-color: violet;
+            border: 10px dashed;
+            padding: 20px;
+        }
+        #div1 {background-clip: border-box;}
+        #div2 {background-clip: padding-box;}
+        #div3 {background-clip: content-box;}
+
+        #bg-img {
+            border: 1px solid;
+            width: 70%;
+            height: 800px;
+            background-image: url(resources/img/img5.jpg);
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+
+            background-size: auto; /* 기본값 : 원래이미지 사이즈 그대로 */
+            background-size: contain; /* 해당 요소안에 이미지가 모두 보이게 */
+            background-size: cover; /* 해당 요소안에 이미지가 가득 차게 */
+            background-size: 100px; /* 가로 길이 */
+            background-size: 100px 100px; /* 가로길이 세로길이 */
+            background-size: 50%; /* */
+            background-size: 50% 50%;
+
+            background-position: left top; /* 기본 값*/
+            background-position: center bottom;
+            background-position: center;
+
+            background-attachment: scroll; /* 기본 값*/
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>배경 관련 스타일(background~)</h1>
+
+    <h3>background-color : 배경색 지정하고자 할 때 사용</h3>
+
+    <div id="div-bg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, culpa, tenetur libero sit eius quis deleniti, saepe magni iure ratione recusandae? Corrupti, praesentium maxime! Beatae impedit eius fuga cupiditate ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, incidunt voluptate distinctio, cum commodi ipsum fuga provident voluptatem quaerat consequuntur quam quidem molestias ratione maiores dolore doloribus ipsam eos amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit debitis non nihil tenetur laudantium incidunt minus tempore rerum, iure quam consequuntur voluptate eius repellendus ab unde mollitia dolorem assumenda.
+    </div>
+
+    <hr>
+
+    <h3>background-clip : 배경을 적용시키고자 하는 범위를 지정할 때 사용</h3>
+
+    <pre>
+        선택자 {
+            background-clip : border-box(기본값)|padding-box|content-box
+        }
+    </pre>
+
+    <div class="div-test" id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam deleniti perferendis animi ut provident doloremque, porro ipsum aliquid alias asperiores maxime, qui error accusantium pariatur? Blanditiis explicabo ad vitae.</div>
+    <div class="div-test" id="div2">Delectus numquam rerum quis, ad dolor laudantium nisi? Nobis, a voluptates quisquam suscipit dolorem ea molestiae. Accusamus non deserunt ducimus possimus vel veniam voluptatum eaque amet eveniet. Quisquam, et. Nobis.</div>
+    <div class="div-test" id="div3">Iste culpa mollitia vitae vel sequi ducimus a, perferendis accusantium aperiam natus dolore eaque debitis aliquam amet non sunt dolorem sapiente illo, fugiat dolores quidem, recusandae quod ex corporis? Adipisci.</div>
+
+    <hr>
+
+    <h3>배경 이미지 테스트</h3>
+    <pre>
+        선택자 {
+            background-image : url("이미지 경로");
+            background-repeat : repeat|repeat-x|repeat-y|no-repeat;
+            background-size : auto|contain|cover|px px|% %;
+            background-position : 좌/우/가운데 위/아래/가운데|px px|% %;
+            background-attachment : scroll|fixed;
+        }
+    </pre>
+
+    <div id="bg-img"></div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
